@@ -11,7 +11,7 @@ if __name__ == "__main__":
         except ValueError:
             ch.sys.exit("Error: Non numerical parameters")
 
-	op = ch.CalculadoraHija()
+        op = ch.CalculadoraHija()
 
         if ch.sys.argv[2] == "suma":
             result = op.plus(operando1, operando2)
@@ -22,7 +22,7 @@ if __name__ == "__main__":
         elif ch.sys.argv[2] == "divide":
             result = op.div(operando1, operando2)
         else:
-            ch.sys.exit('Operación sólo puede ser sumar, restar, multiplicar o dividir.')
+            ch.sys.exit('Solo se puede sumar, restar, multiplicar o dividir.')
 
         print(result)
     else:

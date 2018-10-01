@@ -15,24 +15,24 @@ with open(sys.argv[1], "r") as file:
 	    op = ch.CalculadoraHija()
 
 	    if operador == "suma":
-			for elem in terminos[2:]:
+			for elem in operandos:
 		    	primernum = op.plus(primernum, int(elem))
 		    	rsuma = primernum
-			print (rsuma)
+			print(rsuma)
 	    elif operador == "resta":
 			for elem in operandos:
-		    	primernum = op.minus (primernum, int(elem))
+		    	primernum = op.minus(primernum, int(elem))
 		    	rresta = primernum
-			print (rresta)
+			print(rresta)
 	    elif operador == "multiplica":
 			for elem in operandos:
-		    	primernum = op.mult (primernum, int(elem))
+		    	primernum = op.mult(primernum, int(elem))
 		    	rmult = primernum
-			print (rmult)
+			print(rmult)
 	    elif operador == "divide":
 			for elem in operandos:
-		    	primernum = op.div (primernum, int(elem))
+		    	primernum = op.div(primernum, int(elem))
 		    	rdiv = primernum
-			print (rdiv)
+			print(rdiv)
 	    else:
-			print ("ERROR: Sólo puede sumar, restar, multiplicar o dividir.")
+			print("ERROR: Sólo puede sumar, restar, multiplicar o dividir.")
